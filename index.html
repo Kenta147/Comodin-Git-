@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias API</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="contenido">   <h1>Buscar Noticias</h1>
+    <label for="keyword">Palabra clave</label>
+    <input type="text" id="keyword" placeholder="Ej. Microsoft">
+    
+    <label for="date">Fecha de publicación (YYYY-MM-DD)</label>
+    <input type="date" id="date">
+    
+    <label for="domain">Dominio de origen</label>
+    <input type="text" id="domain" placeholder="Ej. thenextweb.com">
+    
+    <label for="language">Idioma</label>
+    <select id="language">
+      <option value="en">Inglés</option>
+      <option value="es">Español</option>
+      <option value="fr">Francés</option>
+      <option value="de">Alemán</option>
+      <option value="it">Italiano</option>
+    </select>
+
+    <button onclick="searchNews()">Buscar</button>   </div>
+   
+  
+
+  <div id="news-container"></div>
+
+  <script src="code.js"></script>
+</body>
+</html>
