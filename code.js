@@ -25,6 +25,8 @@ document.getElementById("keyword").addEventListener("keypress", function(event) 
     const domain = document.getElementById("domain").value;
     const language = document.getElementById("language").value;
   
+
+    
     // Crear la URL de la API 
     let url = `https://newsapi.org/v2/everything?apiKey=${apiKey}&language=${language}`;
   
